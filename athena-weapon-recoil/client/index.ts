@@ -3,14 +3,16 @@ import * as native from 'natives';
 import { config } from '../shared/config';
 
 alt.on('connectionComplete', () => {
-    if (!config.shootingStat.enabled) return;
-    alt.setStat('shooting_ability', config.shootingStat.value);
+    if (config.shootingStat.enabled) {
+        alt.setStat('shooting_ability', config.shootingStat.value);
+    }
 });
 
 alt.everyTick(() => {
     if (native.isPedShooting(alt.Player.local.scriptID)) {
-        if (!config.shootingStat.enabled) return;
-        alt.setStat('shooting_ability', config.shootingStat.value);
+        if (config.shootingStat.enabled) {
+            alt.setStat('shooting_ability', config.shootingStat.value);
+        }
 
         let weapon = native.getSelectedPedWeapon(alt.Player.local.scriptID);
         if (config.rates[weapon] && config.rates[weapon] != 0) {
