@@ -1,5 +1,5 @@
 export const config = {
-    shooting_stat: { enabled: true, value: 0 }, // the higher value the more space rolling spammable.
+    shootingStat: { enabled: true, value: 0 }, // the higher value the more space rolling spammable.
     rates: {
         [453432689]: 1.5, // PISTOL
         [3219281620]: 1.5, // PISTOL MK2
@@ -42,14 +42,14 @@ export const config = {
         [2144741730]: 0.01, // COMBAT MG
         [3686625920]: 0.01, // COMBAT MG MK2
 
-        [317205821]: 4,     // AUTO SHOTGUN
-        [4019527611]: 4,    // DOUBLE BARREL SHOTGUN
-        [487013001]: 4,     // PUMP SHOTGUN
-        [1432025498]: 4,    // PUMP SHOTGUN MK2
-        [2017895192]: 4,    // SAWNOFF SHOTGUN
-        [3800352039]: 4,    // ASSAULT SHOTGUN
-        [2640438543]: 4,    // BULLPUP SHOTGUN
-        [984333226]: 4,     // HEAVY SHOTGUN
+        [317205821]: 4, // AUTO SHOTGUN
+        [4019527611]: 4, // DOUBLE BARREL SHOTGUN
+        [487013001]: 4, // PUMP SHOTGUN
+        [1432025498]: 4, // PUMP SHOTGUN MK2
+        [2017895192]: 4, // SAWNOFF SHOTGUN
+        [3800352039]: 4, // ASSAULT SHOTGUN
+        [2640438543]: 4, // BULLPUP SHOTGUN
+        [984333226]: 4, // HEAVY SHOTGUN
 
         [911657153]: 0, // STUN GUN
 
@@ -73,5 +73,5 @@ export const config = {
         [1198879012]: 0.1, // FLARE GUN
         [1834241177]: 15, // RAILGUN
         [125959754]: 8, // COMPACT LAUNCHER
-    }
+    },
 };
